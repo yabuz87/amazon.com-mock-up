@@ -1,6 +1,6 @@
  export let cart;
    loadFromStorage();
-
+//this one is to check wether it is working or not in github
 export function loadFromStorage()
  {
     cart=JSON.parse(localStorage.getItem('cart'))
