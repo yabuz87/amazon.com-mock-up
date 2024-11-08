@@ -1,0 +1,306 @@
+body{
+    margin-top:75px;
+    font-family: Roboto, Arial;
+    
+}
+.main{
+    /* max-width:100%;
+    margin:0;
+    display:flex;
+    justify-content: center;
+    align-items:center; */
+}
+.main-container
+{
+    
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+
+@media(max-width:1600px)
+{
+    .main-container{
+        grid-template-columns:repeat(6,1fr);
+    }
+
+}
+@media(max-width:1300px){
+    .main-container
+    {
+        grid-template-columns:repeat(5,1fr);
+    }
+}
+@media(max-width:1000px)
+{
+    .main-container{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+}
+@media(max-width:800px)
+{
+    .main-container
+    {
+        grid-template-columns:repeat(3,1fr);
+    }
+    
+}
+
+@media(max-width:575px){
+    .main-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:450px){
+    .main-container{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .middle-section
+  {
+    display:flex;
+    flex:250px,35px;
+    justify-content: center;
+    
+  }
+  /* .search-input{
+       
+    height: 30px;
+    border:none;
+     font-size:17px;
+    padding-right:15px;
+    padding-left:7px;
+    vertical-align:top;
+ } */
+}
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display:flex;
+    width:100%;
+    flex:1,1,1;
+    flex-direction:row;
+    justify-content:space-between; 
+    align-items:center;
+    background:rgb(28, 28, 28);
+}
+
+.middle-section
+  {
+    display:flex;
+    flex:700px,35px;
+    justify-content: center;
+    
+  }
+
+  .search-input{
+   width:750px;
+   height: 35px;
+
+   border:none;
+    font-size:17px;
+   padding-right:15px;
+   padding-left:7px;
+   vertical-align:top;
+}
+  .search-icon
+{
+    background-color: rgb(226, 171, 68);
+    width:36px;
+    flex-shrink: 0;
+}
+
+  .cart-logo{
+    position:relative;
+    margin-right:25px;
+  }
+  .number_of_cart{  
+    position:absolute;
+    right:16px;
+    top:2px;
+    font-size: 20px;
+    color:rgb(243, 177, 54);
+    font-weight: bold;
+  }
+  .cart-name{
+    position:absolute;
+    color:white;
+    right:-25px;
+    bottom:5px;
+  }
+.left-side{
+    width:150px;
+}
+.left-side img{
+    
+    width:100px;
+    margin-left:22px;
+    vertical-align: top;
+}
+.right-side{
+
+   width:160px;
+    margin-right:25px;
+    display:flex;
+    align-items: center;
+    column-gap:5px;
+
+}
+.right-side img{
+    width:60px;
+   
+}
+
+.right-side span{
+    display:flex;
+    font-size:15px;
+    padding:1px;
+    color:white;
+}
+
+.test-n:hover,.inside-right-side:hover{
+    border-style: solid;
+    padding:1.5px;
+    border-width:0.5px;
+    border-color: white;
+}
+.amazon-logo-im:hover{
+    border-style: solid;
+    padding:5px;
+    border-width:0.5px;
+    border-color: white;
+}
+.single-content
+{
+    display:flex;
+    flex-direction: column;
+    vertical-align: top;
+    row-gap:10px;
+    padding-bottom:5px;
+    padding-left:5px;
+    justify-content: center;
+  
+}
+.single-content {
+    padding-top: 40px;
+    /*  */
+    padding-right: 25px;
+  
+    border-right: 1px solid rgb(231, 231, 231);
+    border-bottom: 1px solid rgb(231, 231, 231);
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    margin-bottom: 20px;
+  } 
+  .product-image {
+    /* Images will overflow their container by default. To
+      prevent this, we set max-width and max-height to 100%
+      so they stay inside their container. */
+    max-width: 100%;
+    max-height: 100%;
+  } 
+  .product-image:hover{
+    transition:.3s;
+    cursor:pointer;
+  }
+  .product-name {
+    height: 40px;
+    margin-bottom: 5px;
+  }
+.rating-png{
+    width:150px;
+    padding-left:10px;
+    vertical-align: top;
+  
+}
+.rating{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    
+}
+.rating span{
+    color:rgb(63, 156, 215);
+    font-size:22px;
+    font-weight: 500;
+}
+#selector{
+
+    border-radius: 5px;
+   margin-top:8px;
+   margin-left:13px;
+    margin-bottom:20px;
+    font-size: 17px;
+    padding:3px;
+  
+}
+
+.cart-added
+{
+    width:30px;
+    height:15px;
+    display:flex;
+    align-items:center;
+    column-gap: 5px;
+    margin:5px;
+    
+   
+    
+
+}
+.added-text{
+
+    color:rgb(6, 136, 6);
+    font-size:17px;
+    font-weight: 500;
+}
+.checkmark-img{
+    width:25px;
+   
+}
+.cost{
+    padding:5px 13px 5px 5px;
+    padding-left:13px;
+    font-size:23px;
+    font-weight: 600;
+   
+}
+
+.add-to-cart-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:#f0c20afa;
+    color:rgb(26, 25, 25);
+    font-size:15px;
+    border:none;
+    margin-left:8px;
+    border-radius: 30px;
+
+}
+.add-to-cart-button:hover{
+    transition:0.3s;
+    background-color:#b5a75bf2;
+    cursor:pointer;
+
+}
+#selector:hover{
+    transition:0.3s;
+    background-color:rgb(217, 216, 216);
+    cursor:pointer;
+}
