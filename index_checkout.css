@@ -1,0 +1,265 @@
+body{
+    font-family:roboto,arial;
+   margin:10px;
+  
+    
+}
+.header{
+    display:flex;
+    justify-content: center;
+    margin-bottom:40px;
+   
+    
+   
+}
+.header-container{
+
+    width:1100px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+@media(max-width:700px)
+{
+    body{
+        width:700px;
+
+    }
+    .header-container{
+        max-width:600px;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+   
+}
+.left-section{
+    /* width:150px; */
+}
+h3{
+    font-size:26px;
+
+    
+}
+.span-inside-h3{
+    font-size:26px;
+    color:rgb(54, 126, 122);
+
+}
+.right-section{
+    display:flex;
+    
+
+}
+.lock-icon{
+    width:18px;
+   
+}
+.amazon-logo{
+    width:100px;
+}
+.Review-flex{
+    display:grid;
+    position:relative;
+    /* grid-template-columns:1fr 200px; */
+    width:700px;
+    /* justify-content:flex-start; */
+}
+
+
+/* let's jump into another body of the page in the checkout page */
+.main-container
+{
+    border-style: solid;
+    display:grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    width:800px;
+    row-gap: 5px;
+    border:0.6px solid  transparent;
+    margin:5px;
+    padding:10px;
+    box-shadow: 0 0 8px rgb(0,0,0,0.5);
+    
+}
+.date-title{
+    color:rgb(12, 120, 12);
+    font-size:21px;
+    font-weight: 600;
+    /* margin-bottom:5px; */
+}
+.container-detail{
+   column-gap: 8px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center; 
+    column-gap: 5px;
+}
+.container-detail img{
+    width:130px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    
+}
+
+@media only screen and (max-width: 1000px) 
+{
+    .Review-flex{
+        max-width: 700px;
+
+    }
+    .main-container{
+        width:430px;
+    }
+    .date-title{
+        color:rgb(12, 120, 12);
+        font-size:17px;
+        font-weight: 500;
+        /* margin-bottom:5px; */
+    }
+    
+
+}
+@media only screen and (min-width: 800px) 
+{
+    .Review-flex{
+        max-width: 700px;
+
+    }
+    .main-container{
+        width:480px;
+    }
+    
+
+}
+@media only screen and (min-width: 900px) 
+{
+    .Review-flex{
+        max-width: 700px;
+
+    }
+    .main-container{
+        width:550px;
+    }
+}
+@media only screen and (min-width: 1000px) 
+{
+    .Review-flex{
+        max-width: 700px;
+
+    }
+    .main-container{
+        width:590px;
+    }
+}
+@media only screen and (min-width: 1200px) 
+{
+    .Review-flex{
+        max-width: 700px;
+
+    }
+    .main-container{
+        width:640px;
+    }
+}
+@media only screen and (min-width: 1300px) 
+{
+    .Review-flex{
+        max-width: 700px;
+
+    }
+    .main-container{
+        width:535px;
+    }
+}
+@media only screen and (min-width: 1400px) 
+{
+    .Review-flex{
+        max-width: 700px;
+
+    }
+    .main-container{
+        width:635px;
+    }
+}
+@media only screen and (min-width: 1500px) 
+{
+    .Review-flex{
+        max-width: 700px;
+
+    }
+    .main-container{
+        width:730px;
+    }
+}
+@media only screen and (min-width: 1600px) 
+{
+    .Review-flex{
+        max-width: 700px;
+
+    }
+    .main-container{
+        width:800px;
+    }
+}
+.delivery-options-radio{
+    display:grid;
+    grid-template-columns:1;
+    width:50px;  
+}
+.container-detail-middle{
+    margin-bottom:3px;
+    vertical-align:top;
+    max-height:100%;
+}
+.delivary-options-radio div,label{
+    color:rgb(9, 121, 9);
+    font-weight: 600;
+    font-size:20px;
+}
+.span-inside-delivery-option{
+    color:rgb(160, 156, 156);
+    display:block;
+    margin-left:18px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.update-span:hover,.delete-span:hover{
+   cursor:pointer;
+   transition: 0.3s;
+}
+.delete-span,.update-span{
+    color:rgba(8, 110, 188, 0.882);
+    font-size:18px;
+    margin-left:5px;
+    margin-right:5px;
+    font-weight: 500;
+}
+
+.price-div{
+    color:rgb(227, 141, 36);
+    font-weight:600;
+}
+.item-name-div{
+    color:black;
+    
+}
+.js-input-update{
+    width:30px;
+    font-size:16px;
+    font-weight:550;
+}
+.save-input-button{
+    color:black;
+    font-size: 18px;
+}
+.save-input-button:hover {
+    color:black;
+    font-size: 18px;
+    cursor:pointer;
+}
