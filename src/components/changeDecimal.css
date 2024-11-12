@@ -1,0 +1,7 @@
+.binary-to-decimal-container{
+    display:flex;
+
+}
+.binary-to-decimal-container input{
+    padding:10px;
+}
