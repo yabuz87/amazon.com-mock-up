@@ -1,7 +1,13 @@
 .binary-to-decimal-container{
     display:flex;
+    flex-direction:column;
+    justify-content: start;
+    align-items: center;
+    gap:5px;
 
 }
+
 .binary-to-decimal-container input{
     padding:10px;
+
 }

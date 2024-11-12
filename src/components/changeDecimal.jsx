@@ -38,16 +38,16 @@ function ChangeDecimal() {
     <div>
     <h1>Convert Decimal to Binary</h1>
       <div className="binary-to-decimal-container">
-        
-        <input
+        <div><input
           className="input-number"
           type="number"
           value={decimal}
-          onChange={(e) => handleDecimal(e)}
-        />
-        <button onClick={handleConvert}>Convert</button>
+          onChange={(e) => handleDecimal(e)}/>
+        <button onClick={handleConvert}>Convert</button></div>
+        
+        <p>{binary}</p>
       </div>
-      <p>{binary}</p> {/* Display the result here */}
+     
     </div>
   );
 }
