@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./changeDecimal.css";
 
-function ChangeDecimal() {
+function ChangeToBinary() {
   const [decimal, setDecimal] = useState(""); // Initial state as empty string
   const [binary, setBinary] = useState("");
 
@@ -10,6 +10,7 @@ function ChangeDecimal() {
     if (value === "") {
       setDecimal(""); // Clear the decimal state if the input is empty
     } else {
+      
       const intValue = parseInt(value, 10); // Convert to integer
       if (!isNaN(intValue)) {
         setDecimal(intValue); // Update state if the value is valid
@@ -57,4 +58,4 @@ function ChangeDecimal() {
   );
 }
 
-export default ChangeDecimal;
+export default ChangeToBinary;

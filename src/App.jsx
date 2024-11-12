@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
-import ChangeDecimal from './components/changeDecimal'
+import ChangeToBinary from './components/ChangeToBinary'
 
 function App() {
   
 
   return (
     <>
-    <ChangeDecimal/>
+    <ChangeToBinary/>
     </>
   )
 }

@@ -11,7 +11,7 @@
 .binary-to-decimal-container{
     display:flex;
     flex-direction:column;
-    justify-content: start;
+    justify-content:left;
     align-items: center;
     gap:5px;
 
@@ -22,4 +22,7 @@
     padding:10px;
     margin-right:5px;
 
+}
+.binary-to-decimal-container p{
+    font-size:20px;
 }
