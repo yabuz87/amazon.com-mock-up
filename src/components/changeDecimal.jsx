@@ -1,17 +1,21 @@
 import React, { useState } from "react";
-import "./changeDecimal.css"
+import "./changeDecimal.css";
 
 function ChangeDecimal() {
-  const [decimal, setDecimal] = useState();
+  const [decimal, setDecimal] = useState(""); // Initial state as empty string
   const [binary, setBinary] = useState("");
 
   const handleDecimal = (e) => {
-    const value = parseInt(e.target.value, 10);
-    if (!isNaN(value)) {
-      setDecimal(value); 
+    const value = e.target.value;
+    if (value === "") {
+      setDecimal(""); // Clear the decimal state if the input is empty
     } else {
-      
-      console.error("Invalid input: Not a number");
+      const intValue = parseInt(value, 10); // Convert to integer
+      if (!isNaN(intValue)) {
+        setDecimal(intValue); // Update state if the value is valid
+      } else {
+        alert("Invalid input: Not a number");
+      }
     }
   };
 
@@ -35,19 +39,20 @@ function ChangeDecimal() {
   };
 
   return (
-    <div>
-    <h1>Convert Decimal to Binary</h1>
+    <div className="container">
+      <h1>Convert Decimal to Binary</h1>
       <div className="binary-to-decimal-container">
-        <div><input
-          className="input-number"
-          type="number"
-          value={decimal}
-          onChange={(e) => handleDecimal(e)}/>
-        <button onClick={handleConvert}>Convert</button></div>
-        
+        <div>
+          <input
+            className="input-number"
+            type="number"
+            value={decimal}
+            onChange={handleDecimal}
+          />
+          <button onClick={handleConvert}>Convert</button>
+        </div>
         <p>{binary}</p>
       </div>
-     
     </div>
   );
 }
