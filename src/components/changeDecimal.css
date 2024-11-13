@@ -8,6 +8,7 @@
     height:80vh;
     flex-direction: column;
 }
+
 .binary-to-decimal-container{
     display:flex;
     flex-direction:column;
