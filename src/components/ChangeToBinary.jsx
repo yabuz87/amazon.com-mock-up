@@ -10,7 +10,6 @@ function ChangeToBinary() {
     if (value === "") {
       setDecimal(""); // Clear the decimal state if the input is empty
     } else {
-      
       const intValue = parseInt(value, 10); // Convert to integer
       if (!isNaN(intValue)) {
         setDecimal(intValue); // Update state if the value is valid
@@ -39,6 +38,12 @@ function ChangeToBinary() {
     setBinary(change(decimal));
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleConvert();
+    }
+  };
+
   return (
     <div className="container">
       <h1>Convert Decimal to Binary</h1>
@@ -46,9 +51,11 @@ function ChangeToBinary() {
         <div>
           <input
             className="input-number"
+            id="input-id"
             type="number"
             value={decimal}
             onChange={handleDecimal}
+            onKeyDown={handleKeyDown} // Add the onKeyDown event here
           />
           <button onClick={handleConvert}>Convert</button>
         </div>
