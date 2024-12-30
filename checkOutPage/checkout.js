@@ -1,9 +1,9 @@
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
-import { calculateCartQuantity, cart, removeCart, saveToStorage, updateDeliveryOption } from './cart.js';
 import { deliveryOptions } from './deliveryOption.js';
-import { products } from './product.js';
-import { formatNumber } from './util/utility.js';
-import { totalItem, totalPriceOfItem, shippingtotal, sum, extratax } from './order_summary.js';
+import { products } from '../homePage/product.js';
+import { formatNumber } from '../util/utility.js';
+import { calculateCartQuantity, cart, removeCart, saveToStorage, updateDeliveryOption } from './cart.js';
+import { extratax, shippingtotal, sum, totalItem, totalPriceOfItem } from './order_summary.js';
 
 function renderOrderSummary() {
     let checkout = '';

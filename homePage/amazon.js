@@ -1,6 +1,6 @@
-import{cart,addToCart,calculateCartQuantity} from './cart.js';
-import { products} from './product.js';
-import { formatNumber } from './util/utility.js';
+import { formatNumber } from '../util/utility.js';
+import { addToCart, calculateCartQuantity } from './cart.js';
+import { products } from './product.js';
 var productHTML='';
 
 
