@@ -1,0 +1,29 @@
+.container
+{
+    border:1px solid white;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:80vh;
+    flex-direction: column;
+}
+
+.binary-to-decimal-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    align-items: center;
+    gap:5px;
+
+}
+
+
+.binary-to-decimal-container input{
+    padding:10px;
+    margin-right:5px;
+
+}
+.binary-to-decimal-container p{
+    font-size:20px;
+}
